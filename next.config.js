@@ -2,7 +2,6 @@ require('dotenv').config();
 const pkg = require('./package.json');
 
 module.exports = {
-  target: 'serverless',
   env: {
     VERSION: pkg.version,
     FORCE_SSL: !!process.env.FORCE_SSL,
